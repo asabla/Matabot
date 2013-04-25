@@ -11,28 +11,14 @@ namespace TestConsole
     {
         static void Main(string[] args)
         {
-            /*
-            IRCConfig conf = new IRCConfig();
-            conf.name = "MataBot";
-            conf.nick = "Matabot";
-            conf.port = 6667;
-            conf.server = "irc.quakenet.org";
-            conf.channel = "#MatafulltGN";
-
-            IrcBot bot = new IrcBot(conf);
-            bot.Connect();
-            Console.WriteLine("Bot Quit/Crashed");
-            Console.ReadLine();
-             * */
-
             IrcConfig conf = new IrcConfig();
-            conf.description = "A IRC-bot from MatafulltGamingNetwork";
-            conf.name = "kebablabot";
-            conf.nick = "kebablabot";
-            conf.owner = "kebabla";
-            conf.port = 6667;
+            conf.description = "Description for bot";   //DEscription for the bot
+            conf.name = "botName";  //Botname
+            conf.nick = "botNick";  //Nick for the bot
+            conf.owner = "owner";   //Irc Owner
+            conf.port = 6667;   //Default quakenet port
             conf.server = "irc.quakenet.org";
-            conf.channel = "#webhallen";
+            conf.channel = "#channel";  //IRC-Channel HERE!
 
             MataBot bot = new MataBot(conf);
             bot.Connect();
